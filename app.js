@@ -11,10 +11,8 @@ const email=document.getElementById('email');
 function sendEmail (event){
     event.preventDefault();
     emailjs.init(serviceId);
-
- 
-
-
+     
+    
     emailjs.sendForm(serviceId,templateId,frmEmail,apiKey)
         
     
@@ -26,7 +24,7 @@ function sendEmail (event){
 
 
         Swal.fire({
-            icon: 'eror' ,
+            icon: 'error' ,
             title: 'Oops...',
             text: ' No ha sido posible enviar el mensaje!',
         });
@@ -35,8 +33,5 @@ function sendEmail (event){
 };
 
 
-function error(){
-    if(email.value == ''){
-        
-    }
-}
+
+
