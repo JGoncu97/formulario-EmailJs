@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de contacto</h1>
+        <form id="frm-email">
+            <div class="form-group">
+                <label for="nombre"><strong>Nombre:</strong></label>
+                <input 
+                type="text"
+                id="username"
+                name="usernameemail"
+                placeholder="Tu nombre"
+                required/>
+            </div>
+            <div class="form-group">
+                <label for="email"><strong>Email: </strong></label>
+                <input 
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Tu correo Electronico"
+                required/>
+            </div>
+            <div class="form-group">
+                <label class="msg" for="message"><strong>Mensaje</strong></label>
+                <textarea 
+                name="msg" 
+                id="messageText"
+                rows="4"
+                placeholder="Tu mensaje"
+                required
+                ></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enviar" />
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
